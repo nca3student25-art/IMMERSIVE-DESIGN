@@ -1,0 +1,23 @@
+{
+  "name": "immersive-studio",
+  "version": "1.0.0",
+  "description": "IMMERSIVE STUDIO - We Design Immersive Experiences",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "immersive",
+    "design",
+    "studio"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
