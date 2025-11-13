@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IMMERSIVE STUDIO - We Design Immersive Experiences</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#41E0FF",
+                        "accent": "#FF4FD8",
+                        "background-light": "#f5f5f5",
+                        "background-dark": "#050509",
+                        "text-light": "#050509",
+                        "text-dark": "#F5F5F5",
+                        "text-muted-light": "#6b7280",
+                        "text-muted-dark": "#9ca3af",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "1.5rem",
+                        "xl": "2rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark text-text-dark dark font-display">
+<div class="relative w-full overflow-x-hidden">
+<!-- Navigation Drawer (Hidden by default) -->
+<div class="fixed left-0 top-0 z-50 h-full w-full bg-background-dark/80 backdrop-blur-sm hidden" id="nav-drawer">
+<div class="flex h-full w-10/12 max-w-sm flex-col gap-4 bg-background-dark p-6">
+<div class="flex items-center justify-between pb-4">
+<h2 class="text-lg font-bold uppercase tracking-widest text-text-dark">Menu</h2>
+<button class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full text-text-dark">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+</div>
+<ul class="flex flex-col gap-2">
+<li class="flex h-14 cursor-pointer items-center gap-4 rounded-full px-4 bg-primary/20 text-primary">
+<span class="material-symbols-outlined pr-2">info</span>
+<p class="text-base font-bold leading-tight">About</p>
+</li>
+<li class="flex h-14 cursor-pointer items-center gap-4 rounded-full px-4 text-text-dark hover:bg-white/10">
+<span class="material-symbols-outlined pr-2">grid_view</span>
+<p class="text-base font-bold leading-tight">Works</p>
+</li>
+<li class="flex h-14 cursor-pointer items-center gap-4 rounded-full px-4 text-text-dark hover:bg-white/10">
+<span class="material-symbols-outlined pr-2">memory</span>
+<p class="text-base font-bold leading-tight">Technology</p>
+</li>
+<li class="flex h-14 cursor-pointer items-center gap-4 rounded-full px-4 text-text-dark hover:bg-white/10">
+<span class="material-symbols-outlined pr-2">group</span>
+<p class="text-base font-bold leading-tight">Clients</p>
+</li>
+<li class="flex h-14 cursor-pointer items-center gap-4 rounded-full px-4 text-text-dark hover:bg-white/10">
+<span class="material-symbols-outlined pr-2">mail</span>
+<p class="text-base font-bold leading-tight">Contact</p>
+</li>
+</ul>
+</div>
+</div>
+<!-- Main Content -->
+<main class="flex flex-col">
+<!-- Top App Bar -->
+<header class="fixed top-0 z-40 flex w-full items-center justify-between bg-background-dark/80 p-4 backdrop-blur-sm">
+<h2 class="text-lg font-bold uppercase tracking-widest text-text-dark">Immersive Studio</h2>
+<button class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full text-text-dark">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</header>
+<!-- Hero Section -->
+<section class="flex min-h-screen flex-col items-center justify-center px-4 pt-24 text-center">
+<p class="pb-3 pt-1 text-sm font-normal uppercase tracking-[0.2em] text-text-muted-dark">Immersive Media Art Studio</p>
+<h1 class="pb-4 pt-4 text-[32px] font-bold leading-tight tracking-tight text-text-dark sm:text-4xl">We Design Immersive Experiences.</h1>
+<p class="max-w-md pb-8 pt-1 text-base font-normal leading-normal text-text-muted-dark">Crafting sensory journeys that merge art and technology to create unforgettable moments.</p>
+<div class="flex w-full flex-col items-center gap-4 sm:flex-row sm:justify-center">
+<button class="h-12 w-full max-w-xs rounded-full border-2 border-primary bg-transparent px-8 text-base font-bold text-primary transition-colors hover:bg-primary hover:text-background-dark">View Projects</button>
+<button class="h-12 w-full max-w-xs text-base font-bold text-text-dark underline underline-offset-4">Play Showreel</button>
+</div>
+</section>
+<!-- About Section -->
+<section class="w-full space-y-8 px-4 py-20">
+<h2 class="text-center text-2xl font-bold uppercase tracking-widest text-text-dark">About</h2>
+<p class="mx-auto max-w-xl text-center text-base leading-relaxed text-text-muted-dark">We are a collective of artists, designers, and engineers dedicated to pushing the boundaries of storytelling through technology. Our work explores the intersection of the physical and digital worlds, creating captivating experiences that resonate with audiences on a profound level.</p>
+<div class="flex flex-wrap justify-center gap-2 pt-4">
+<span class="rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-text-dark">Immersive Installation</span>
+<span class="rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-text-dark">Projection Mapping</span>
+<span class="rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-text-dark">Interactive Media</span>
+<span class="rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-text-dark">XR</span>
+<span class="rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-text-dark">Sound Design</span>
+</div>
+</section>
+<!-- Works Section -->
+<section class="w-full space-y-8 px-4 py-20">
+<h2 class="text-center text-2xl font-bold uppercase tracking-widest text-text-dark">Selected Works</h2>
+<div class="flex justify-center gap-6 border-b border-white/10 pb-4">
+<button class="text-base font-bold text-primary underline underline-offset-8">All</button>
+<button class="text-base font-medium text-text-muted-dark">Installation</button>
+<button class="text-base font-medium text-text-muted-dark">Projection</button>
+</div>
+<div class="grid grid-cols-1 gap-8 pt-4 md:grid-cols-2">
+<div class="group relative flex cursor-pointer flex-col overflow-hidden rounded-lg bg-white/5">
+<img class="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Abstract swirling colors in neon blue, pink, and yellow, resembling a digital painting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ3HVGdf7VPbuFkM5nNPif8cWqtYmZtq61ApMsgRXMIYzHL5RTWsQV-nvl1Av6Ogx5zq44RB0KS7-WXySnpQgVpOhWdHDhAZJ0at_B29_ckIHaTuehrBGeIVfgDbh8RLJqys8lPPsUvxjqcnFStehMzRkIuTDaXnx3HU2WCls8PFuDR5OWbctp3KRZ7C_ru5_OHK-vtIvJL5XBBbs1diPYg5QiQ5_Ar2kCcUp6mTNxyHLl7yRh3vh4-mHiKxkzzK5ogT6gSEtv7A"/>
+<div class="absolute inset-0 rounded-lg border-2 border-transparent transition-colors group-hover:border-primary"></div>
+<span class="material-symbols-outlined absolute right-4 top-4 text-2xl text-white opacity-0 transition-opacity group-hover:opacity-100">north_east</span>
+<div class="p-4">
+<h3 class="text-xl font-bold text-text-dark">Aetherium Flux</h3>
+<p class="text-sm text-text-muted-dark">Immersive Exhibition · 2024</p>
+</div>
+</div>
+<div class="group relative flex cursor-pointer flex-col overflow-hidden rounded-lg bg-white/5">
+<img class="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="A person stands in a dark room filled with hanging strings of blue and purple lights, creating an ethereal atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwErcnMUOj2Rndr9JpdXlRQdrMjdjTaVq5wKg0wcfmt23YDGXBTby6M0JjsV8JEaOKul-VLE7LYppgali6vTNd1YGHglM95xyUlS7ThQ93um_yftD-Hsiuv0IwdzOWFaJ9UcrJ0gGWp5lxYEkTBguxbV2Pk-MYViqPgKXRJX0X8mtUSb719pLuYfRwyuZSTrztlxCOO1lhKICCqnCJFvIbErbsRghlgD0JH5kP16noIrU-M6u3wNT0JniyVdWM5Fj3ANE-Z7WPng"/>
+<div class="absolute inset-0 rounded-lg border-2 border-transparent transition-colors group-hover:border-accent"></div>
+<span class="material-symbols-outlined absolute right-4 top-4 text-2xl text-white opacity-0 transition-opacity group-hover:opacity-100">north_east</span>
+<div class="p-4">
+<h3 class="text-xl font-bold text-text-dark">Chrono Weave</h3>
+<p class="text-sm text-text-muted-dark">Interactive Installation · 2023</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Technology Section -->
+<section class="w-full space-y-8 px-4 py-20">
+<h2 class="text-center text-2xl font-bold uppercase tracking-widest text-text-dark">Technology</h2>
+<div class="mx-auto max-w-xl space-y-6 pt-4">
+<div class="rounded-lg border border-white/10 bg-white/5 p-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-3xl text-primary">lightbulb</span>
+<h3 class="text-lg font-bold text-text-dark">Concept &amp; Narrative Design</h3>
+</div>
+<p class="mt-2 text-base text-text-muted-dark">We begin by crafting compelling stories and concepts that form the foundation of every immersive experience.</p>
+</div>
+<div class="rounded-lg border border-white/10 bg-white/5 p-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-3xl text-primary">engineering</span>
+<h3 class="text-lg font-bold text-text-dark">Technical Direction</h3>
+</div>
+<p class="mt-2 text-base text-text-muted-dark">Our experts architect and implement the complex systems that bring our creative visions to life with precision.</p>
+</div>
+<div class="rounded-lg border border-white/10 bg-white/5 p-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-3xl text-primary">settings_remote</span>
+<h3 class="text-lg font-bold text-text-dark">On-site Operation</h3>
+</div>
+<p class="mt-2 text-base text-text-muted-dark">We ensure flawless execution and operation, managing every technical detail from installation to the final show.</p>
+</div>
+</div>
+</section>
+<!-- Clients & Partners Section -->
+<section class="w-full space-y-8 px-4 py-20 text-center">
+<h2 class="text-xl font-medium text-text-dark">Brands &amp; Institutions We’ve Worked With</h2>
+<div class="grid grid-cols-2 items-center justify-center gap-8 pt-6 sm:grid-cols-4">
+<div class="flex h-16 items-center justify-center text-2xl font-bold uppercase text-text-muted-dark opacity-60 transition-opacity hover:opacity-100">Nexus</div>
+<div class="flex h-16 items-center justify-center text-2xl font-bold uppercase text-text-muted-dark opacity-60 transition-opacity hover:opacity-100">Vertex</div>
+<div class="flex h-16 items-center justify-center text-2xl font-bold uppercase text-text-muted-dark opacity-60 transition-opacity hover:opacity-100">Quantum</div>
+<div class="flex h-16 items-center justify-center text-2xl font-bold uppercase text-text-muted-dark opacity-60 transition-opacity hover:opacity-100">Aura</div>
+</div>
+</section>
+<!-- Contact / Footer Section -->
+<footer class="w-full space-y-12 bg-white/5 px-4 py-20">
+<div class="mx-auto max-w-xl text-center">
+<h2 class="text-3xl font-bold leading-tight text-text-dark">Let’s Build Your Next Immersive Story.</h2>
+</div>
+<div class="mx-auto grid max-w-4xl grid-cols-1 gap-12 md:grid-cols-2">
+<div class="space-y-4 text-center md:text-left">
+<h3 class="text-lg font-bold text-text-dark">Get in Touch</h3>
+<a class="block text-base text-primary underline underline-offset-4" href="mailto:hello@immersivestudio.com">hello@immersivestudio.com</a>
+<div class="flex justify-center gap-4 pt-2 md:justify-start">
+<a class="text-base text-text-muted-dark underline underline-offset-4" href="#">Instagram</a>
+<a class="text-base text-text-muted-dark underline underline-offset-4" href="#">Vimeo</a>
+</div>
+</div>
+<form class="space-y-4">
+<input class="w-full rounded border-white/20 bg-transparent px-4 py-3 text-text-dark focus:border-primary focus:ring-primary" placeholder="Name" type="text"/>
+<input class="w-full rounded border-white/20 bg-transparent px-4 py-3 text-text-dark focus:border-primary focus:ring-primary" placeholder="Email" type="email"/>
+<textarea class="w-full rounded border-white/20 bg-transparent px-4 py-3 text-text-dark focus:border-primary focus:ring-primary" placeholder="Message" rows="4"></textarea>
+<button class="h-12 w-full rounded-full border-2 border-primary bg-primary px-8 text-base font-bold text-background-dark transition-colors hover:bg-transparent hover:text-primary" type="submit">Send Message</button>
+</form>
+</div>
+<div class="border-t border-white/10 pt-8 text-center">
+<p class="text-sm text-text-muted-dark">© 2025 IMMERSIVE STUDIO. All Rights Reserved.</p>
+</div>
+</footer>
+</main>
+</div>
+</body></html>
